@@ -1,6 +1,4 @@
 node_modules/
-.env
-.env.*
 *.log
 relay-state.json
 relay-state.json.tmp
@@ -19,3 +17,4 @@ packages/*/src/*.js
 packages/*/src/*.js.map
 packages/*/src/*.d.ts
 packages/*/src/*.d.ts.map
+config.bat
