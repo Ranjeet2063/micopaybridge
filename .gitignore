@@ -1,6 +1,4 @@
 node_modules/
-.env
-.env.*
 # Excepcion: .env.example NO lleva valores reales y tiene que viajar en el
 # repo. Sin esta linea, `.env.*` de arriba se lo traga y un clon limpio se
 # queda otra vez sin saber que configurar (#4).
@@ -27,3 +25,4 @@ packages/*/src/*.d.ts.map
 # Config local de Claude Code (launch.json para levantar los dev servers).
 # Es herramienta de quien desarrolla, no del producto.
 .claude/
+config.bat
