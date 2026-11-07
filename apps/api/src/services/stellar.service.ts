@@ -217,13 +217,15 @@ export async function lockAtomicSwap(params: {
       .update(Buffer.from(secretHash, 'hex'))
       .digest('hex');
 
+    const explorerUrl = `https://stellar.expert/explorer/testnet/tx/${txHash}`;
+
     return {
       txHash,
       swapId,
       explorerUrl,
       lockedAmountUsdc: lockAmount,
       requestedAmountUsdc: amountUsdc,
-      capped: isCapped, `https://stellar.expert/explorer/testnet/tx/${txHash}`,
+      capped: isCapped,
     };
   } catch (err: any) {
     // No hay fallback. Esta es una capa de liquidacion: devolver un txHash que

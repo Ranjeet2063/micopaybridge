@@ -140,6 +140,9 @@ describe("POST /api/v1/bazaar/accept, fallo del lock on-chain", () => {
       txHash: "abc123",
       swapId: "def456",
       explorerUrl: "https://stellar.expert/explorer/testnet/tx/abc123",
+      lockedAmountUsdc: 1,
+      requestedAmountUsdc: 1,
+      capped: false,
     });
 
     const res = await app.inject({

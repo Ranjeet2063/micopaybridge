@@ -88,6 +88,9 @@ describe("POST /api/v1/bazaar/accept, secret_hash obligatorio", () => {
       txHash: "tx123",
       swapId: "swap123",
       explorerUrl: "https://stellar.expert/explorer/testnet/tx/tx123",
+      lockedAmountUsdc: 1,
+      requestedAmountUsdc: 1,
+      capped: false,
     });
   });
 
